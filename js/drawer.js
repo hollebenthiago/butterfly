@@ -27,7 +27,7 @@ var spheres = [];
 
 var scene = new THREE.Scene();
 var canvasholder = document.getElementById('canvas')
-var camera = new THREE.PerspectiveCamera(75,300/300,1,1000)
+var camera = new THREE.PerspectiveCamera(75,500/300,1,1000)
 
 camera.position.x = 11;
 camera.position.y = 40;
@@ -39,7 +39,7 @@ camera.rotation.z = 3.3
 
 var renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setClearColor("#C0C0C0"); //background color
-renderer.setSize(300, 300)
+renderer.setSize(500, 300)
 document.getElementById('canvas').appendChild(renderer.domElement);
 
 //CONTROLS
